@@ -1,7 +1,8 @@
 
 ```{r 'check_ps', include=FALSE}
 
-user.name = 'ENTER A USER NAME HERE'
+user.name = 'Imran Mohammad'
+
 ```
 
 # RTutor Uebungsblatt 4 - Projektkurs
@@ -46,9 +47,9 @@ library(stargazer)
 a) Im ersten Schritt laden wir die zur Verfuegung stehenden Daten. Laden Sie die unter Daten bereitgestellten `EU_Makro.csv` Daten in R.
 
 ```{r "1_a"}
-____ <- read_csv("____")
+eu_makro <- read_csv("./data/EU_Makro.csv")
 
-# enter your code here ...
+eu_makro
 
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
