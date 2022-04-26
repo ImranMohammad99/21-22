@@ -1,0 +1,38 @@
+{"type":["init_ps"],"time":["2021-11-11 13:38:21"],"user":["Imran MOhammad"],"umph":[1636634301.9032],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2021-11-11 13:38:22"],"user":["Imran MOhammad"],"umph":[1636634302.0073],"ok":[true],"chunk":[1],"ex":[1],"e.ind":[0],"code":["\n365*24\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2021-11-11 13:38:22"],"user":["Imran MOhammad"],"umph":[1636634302.0927],"ok":[true],"chunk":[2],"ex":[1],"e.ind":[0],"code":["a <- 11*13\na"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2021-11-11 13:38:22"],"user":["Imran MOhammad"],"umph":[1636634302.1659],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[0],"code":["\nb <- 2^10\n\nb\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2021-11-11 13:38:22"],"user":["Imran MOhammad"],"umph":[1636634302.2234],"ok":[false],"chunk":[4],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\n\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to x in chunk 1_c."]}
+,
+{"type":["check_ps"],"time":["2021-11-11 13:45:53"],"user":["Imran MOhammad"],"umph":[1636634753.6318],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2021-11-11 13:45:53"],"user":["Imran MOhammad"],"umph":[1636634753.685],"ok":[true],"chunk":[4],"ex":[1],"e.ind":[0],"code":["\nx <- a+b\n\nx\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2021-11-11 13:45:53"],"user":["Imran MOhammad"],"umph":[1636634753.7479],"ok":[true],"chunk":[5],"ex":[1],"e.ind":[0],"code":["\nw <- sqrt(123456789)\n\n\nw\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2021-11-11 13:45:53"],"user":["Imran MOhammad"],"umph":[1636634753.7944],"ok":[false],"chunk":[6],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 1_e."]}
+,
+{"type":["check_ps"],"time":["2021-11-11 14:19:17"],"user":["Imran MOhammad"],"umph":[1636636757.1742],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2021-11-11 14:19:17"],"user":["Imran MOhammad"],"umph":[1636636757.222],"ok":[true],"chunk":[6],"ex":[1],"e.ind":[0],"code":["\nabs(-13^3)\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2021-11-11 14:19:17"],"user":["Imran MOhammad"],"umph":[1636636757.2566],"ok":[true],"chunk":[7],"ex":[1],"e.ind":[0],"code":["(0.1 + 0.2 - 0.3)*10000000000000000000"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2021-11-11 14:19:17"],"user":["Imran MOhammad"],"umph":[1636636757.2928],"ok":[true],"chunk":[8],"ex":[2],"e.ind":[0],"code":["v <- c(45,-6,0,2)\nv\nu <- 2:8\nu"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2021-11-11 14:19:17"],"user":["Imran MOhammad"],"umph":[1636636757.3569],"ok":[true],"chunk":[9],"ex":[2],"e.ind":[0],"code":["\nx <- 0:10\n\n\nx\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2021-11-11 14:19:17"],"user":["Imran MOhammad"],"umph":[1636636757.3937],"ok":[true],"chunk":[10],"ex":[2],"e.ind":[0],"code":["10+x\nx*x"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2021-11-11 14:19:17"],"user":["Imran MOhammad"],"umph":[1636636757.4851],"ok":[false],"chunk":[11],"ex":[2],"e.ind":[1],"code":["\n1\n"],"message":["\nYou have not yet entered all correct commands in chunk 2_b_2."]}
+,
+{"type":["check_ps"],"time":["2021-11-11 14:19:34"],"user":["Imran MOhammad"],"umph":[1636636774.7915],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2021-11-11 14:19:34"],"user":["Imran MOhammad"],"umph":[1636636774.835],"ok":[true],"chunk":[11],"ex":[2],"e.ind":[0],"code":["\n2\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2021-11-11 14:19:34"],"user":["Imran MOhammad"],"umph":[1636636774.877],"ok":[false],"chunk":[12],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to y in chunk 2_c."]}
+,

@@ -1,12 +1,12 @@
 
 ```{r 'check_ps', include=FALSE}
 
-user.name = 'ENTER A USER NAME HERE'
+user.name = 'Imran MOhammad'
 ```
 
-# RTutor Übungsblatt 1 - Projektkurs
+# RTutor Ãbungsblatt 1 - Projektkurs
 
-Dies ist das erste interaktive RTutor Übungsblatt für den WiWi Projektkurs an der Uni Ulm. In diesem Uebungsblatt arbeiten wir mit der lokalen Version von RStudio. RSudio ist eine Entwicklungsumgebung, die den Umgang mit R erleichtert. Bearbeiten Sie die Fragen direkt in diesem Fenster. Zusaetzlich steht Ihnen die Moeglichkeit offen in der Konsole (bei den meisten befindet sie sich unter diesem Fenster) Code einzugeben und zu testen. Dieser Code kann nicht gesichert werden. Das Fenster rechts-unten koennen Sie insbesondere dazu nutzen sich Hilfe zu einzelnen Funktionen sowie Grafiken anzeigen zu lassen. Rechts-oben sehen Sie ein Fenster mit der Uebersicht Ihrer Variablen und Datensaetze. Wenn Sie auf einen dieser Datensaetze klicken wird er in einem neuen Fenster and dieser Stelle angezeigt (der sogenannte View-Modus).
+Dies ist das erste interaktive RTutor Ãbungsblatt fÃ¼r den WiWi Projektkurs an der Uni Ulm. In diesem Uebungsblatt arbeiten wir mit der lokalen Version von RStudio. RSudio ist eine Entwicklungsumgebung, die den Umgang mit R erleichtert. Bearbeiten Sie die Fragen direkt in diesem Fenster. Zusaetzlich steht Ihnen die Moeglichkeit offen in der Konsole (bei den meisten befindet sie sich unter diesem Fenster) Code einzugeben und zu testen. Dieser Code kann nicht gesichert werden. Das Fenster rechts-unten koennen Sie insbesondere dazu nutzen sich Hilfe zu einzelnen Funktionen sowie Grafiken anzeigen zu lassen. Rechts-oben sehen Sie ein Fenster mit der Uebersicht Ihrer Variablen und Datensaetze. Wenn Sie auf einen dieser Datensaetze klicken wird er in einem neuen Fenster and dieser Stelle angezeigt (der sogenannte View-Modus).
 
 Dieses Dokument ist in RMarkdown geschrieben. Wenn Sie hier Code ausfuehren moechten, dann markieren Sie diesen und druecken dann auf "Strg + Enter" oder auf "Run" oben rechts. Alternativ koennen Sie auch auf den gruenen Play Button in jedem Chunk druecken. Sie sollten den Code einer Teilaufgabe ausfuehren und zusaetzlich mit dem Addin 'Check Problemset' ueberpruefen, bevor Sie fortfahren! Um die Anworten zu ueberpruefen speichern Sie diese Datei (Strg + s) und fuehren Sie das Addin 'Check Problemset' aus. Sie finden die Addins in der Kopfzeile von RStudio oder unter Tools/Addins.
 
@@ -23,28 +23,27 @@ Wenn Sie bei einer Aufgabe nicht weiter wissen, so koennen Sie jederzeit in die 
 
 ## Exercise 1 -- R als Taschenrechner
 
-a) Sie können R als einfachen Taschenrechner nutzen. Geben Sie unten in das Textfeld `365*24` ein, um zu berechnen wie viele Stunden ein Jahr hat. Drücken Sie hiernach auf `check`.
+a) Sie kÃ¶nnen R als einfachen Taschenrechner nutzen. Geben Sie unten in das Textfeld `365*24` ein, um zu berechnen wie viele Stunden ein Jahr hat. DrÃ¼cken Sie hiernach auf `check`.
 
 ```{r "1_a",optional=TRUE}
 
-# enter your code here ...
+365*24
 
 ```
 
-Bei der richtigen Lösung erhalten Sie Punkte. Sie können nach oben Scrollen und auf den Knopf mit den Balken <i class="fa fa-tasks fa-fw"></i> oben rechts drücken, um zu sehen, wie viele Punkte Sie bereits haben. Sie können eine Aufgabe ohne Punktabzug beliebig oft versuchen.
+Bei der richtigen LÃ¶sung erhalten Sie Punkte. Sie kÃ¶nnen nach oben Scrollen und auf den Knopf mit den Balken <i class="fa fa-tasks fa-fw"></i> oben rechts drÃ¼cken, um zu sehen, wie viele Punkte Sie bereits haben. Sie kÃ¶nnen eine Aufgabe ohne Punktabzug beliebig oft versuchen.
 
-b) `P` In R arbeitet man mit Variablen. Der Beispielcode unten weist der Variablen `a` den Wert 11 mal 13 zu und zeigt danach `a`. Drücken Sie einfach auf `check`.
+b) `P` In R arbeitet man mit Variablen. Der Beispielcode unten weist der Variablen `a` den Wert 11 mal 13 zu und zeigt danach `a`. DrÃ¼cken Sie einfach auf `check`.
 ```{r "1_b"}
 a <- 11*13
 a
 ```
-Nutzen sie nun das Rechenzeichen für Potenzen `^` um der Variablen `b` den Wert  2^10 zuzuweisen und zeigen Sie dann `b` an.
+Nutzen sie nun das Rechenzeichen fÃ¼r Potenzen `^` um der Variablen `b` den Wert  2^10 zuzuweisen und zeigen Sie dann `b` an.
 ```{r "1_b_2",optional=FALSE}
 
-# enter your code here ...
+b <- 2^10
 
-
-# enter your code here ...
+b
 
 ```
 
@@ -52,10 +51,9 @@ c) Speichern Sie in der Variable `x` die Summe von `a` und `b` und lassen Sie da
 
 ```{r "1_c",optional=TRUE}
 
-# enter your code here ...
+x <- a+b
 
-
-# enter your code here ...
+x
 
 ```
 
@@ -64,10 +62,10 @@ d) Suchen Sie auf Google mit dem Suchbegriff "r compute square root", mit welche
 
 ```{r "1_d",optional=TRUE}
 
-# enter your code here ...
+w <- sqrt(123456789)
 
 
-# enter your code here ...
+w
 
 ```
 
@@ -75,7 +73,7 @@ e) Suchen Sie auf Google mit dem Suchbegriff "r compute absolute values", mit we
 
 ```{r "1_e",optional=TRUE}
 
-# enter your code here ...
+abs(-13^3)
 
 ```
 
@@ -84,15 +82,15 @@ e) Suchen Sie auf Google mit dem Suchbegriff "r compute absolute values", mit we
 Zum Schluss dieser Aufgabe, was halten Sie von folgendem Angebot:
 
 > Sie erhalten 10 Euro, und geben mir das Ergebnis von folgender Rechenoperation in Euro:<br><br>(0.1 + 0.2 - 0.3)*10000000000000000000<br><br>
-> Um nicht so viel Kopfrechnen zu müssen, lassen wir R berechnen, wieviel Sie zahlen müssen...
+> Um nicht so viel Kopfrechnen zu mÃ¼ssen, lassen wir R berechnen, wieviel Sie zahlen mÃ¼ssen...
 
-Drücken Sie einfach auf `check`.
+DrÃ¼cken Sie einfach auf `check`.
 ```{r "1_e_2"}
 (0.1 + 0.2 - 0.3)*10000000000000000000
 ```
 Da sollte doch 0 herauskommen... tut es aber auf den meisten Computern nicht!
 
-Bei Rechenoperationen mit Kommazahlen kommt es bei fast allen Programmiersprachen regelmäßig zu kleineren Rundungsfehlern. Diese machen meist aber nichts aus, zumindest <a href="http://ta.twi.tudelft.nl/users/vuik/wi211/disasters.html" target="_blank"> solange wir keine Raketen bauen...</a>
+Bei Rechenoperationen mit Kommazahlen kommt es bei fast allen Programmiersprachen regelmÃ¤Ãig zu kleineren Rundungsfehlern. Diese machen meist aber nichts aus, zumindest <a href="http://ta.twi.tudelft.nl/users/vuik/wi211/disasters.html" target="_blank"> solange wir keine Raketen bauen...</a>
 
 
 ## Exercise 2 -- Rechnen mit Vektoren
@@ -110,10 +108,10 @@ a) `P` Speichern sie in der Variablen `x` alle ganzen Zahlen zwischen 0 und 10 u
 
 ```{r "2_a"}
 
-# enter your code here ...
+x <- 0:10
 
 
-# enter your code here ...
+x
 
 ```
 
@@ -125,7 +123,7 @@ x*x
 
 Schauen Sie auf das zweite Rechenergebnis und versuchen Sie bitte folgendes Quiz zu beantworten.
 
-Welche Art von Multiplikation führt der R Befehl `x*x` durch?'
+Welche Art von Multiplikation fÃ¼hrt der R Befehl `x*x` durch?'
 
 1) Er berechnet das Skalarprodukt von x und x.
 2) Er multipliziert x mit x elementweise.
@@ -134,7 +132,7 @@ Welche Art von Multiplikation führt der R Befehl `x*x` durch?'
 Geben Sie hier die Ziffer Ihrer Antwort ein und fuehren Sie die Codezeile aus:
 ```{r "2_b_2",optional=TRUE}
 
-# enter your code here ...
+2
 
 ```
 
@@ -149,7 +147,7 @@ c) `P` Speichern Sie nun in der Variable `y` einen neuen Vektor, der die Werte v
 
 ```
 
-d) `P` Suchen Sie auf Google mit dem Suchbegriff "r replicate elements", mit welcher Funktion man in R einen Vektor mit einer Reihe identischer Elemente erstellt. Erzeugen Sie dann einen Vektor der 11 mal 3.14 enthält und speichern sie diesen als `r` ab. Zeigen Sie dann `r` an.
+d) `P` Suchen Sie auf Google mit dem Suchbegriff "r replicate elements", mit welcher Funktion man in R einen Vektor mit einer Reihe identischer Elemente erstellt. Erzeugen Sie dann einen Vektor der 11 mal 3.14 enthÃ¤lt und speichern sie diesen als `r` ab. Zeigen Sie dann `r` an.
 
 ```{r "2_d"}
 
@@ -161,15 +159,15 @@ d) `P` Suchen Sie auf Google mit dem Suchbegriff "r replicate elements", mit wel
 ```
 
 
-Lassen Sie einfach folgenden Code laufen um einen Plot von `x` und den zugehörigen `y` Werten sowie `r` und den zugehörigen `y`  zu erstellen. Klicken Sie hierfür auf `check`. 
+Lassen Sie einfach folgenden Code laufen um einen Plot von `x` und den zugehÃ¶rigen `y` Werten sowie `r` und den zugehÃ¶rigen `y`  zu erstellen. Klicken Sie hierfÃ¼r auf `check`. 
 ```{r "2_d_2",dev='svg'}
 library(ggplot2)
 qplot(x,y)
 qplot(x,r)
 ```
-Wir haben hier die Funktion `qplot` aus den R Paket `ggplot2` genutzt, um den Plot zu erstellen. Das Paket `ggplot2` ist ein sehr gut durchdachtes Paket mit dem man schnell sehr ansehnliche Grafiken erstellen kann. Sie werden später noch genauer lernen was Pakete sind und wie man sie verwendet.
+Wir haben hier die Funktion `qplot` aus den R Paket `ggplot2` genutzt, um den Plot zu erstellen. Das Paket `ggplot2` ist ein sehr gut durchdachtes Paket mit dem man schnell sehr ansehnliche Grafiken erstellen kann. Sie werden spÃ¤ter noch genauer lernen was Pakete sind und wie man sie verwendet.
 
-e) `P` Wie sie sehen sind jeweils die Abstände zwischen den x-Werten sehr gross. Erstellen Sie einen Vektor `x` der im Abstand von 0.1 Einheiten alle Zahlen zwischen -1 und 1 enthält. Googlen Sie "r seq" für eine genaue Hilfe zur Funktion  
+e) `P` Wie sie sehen sind jeweils die AbstÃ¤nde zwischen den x-Werten sehr gross. Erstellen Sie einen Vektor `x` der im Abstand von 0.1 Einheiten alle Zahlen zwischen -1 und 1 enthÃ¤lt. Googlen Sie "r seq" fÃ¼r eine genaue Hilfe zur Funktion  
 ```{r "2_e"}
 
 # enter your code here ...
@@ -186,7 +184,7 @@ y <- x^3
 qplot(x,y)
 ```
 
-f) `P` Vektoren können statt Zahlen auch Text enthalten, dies sind dann sog. `character vectors`. Hier ist ein Beispiel ("check" drücken):
+f) `P` Vektoren kÃ¶nnen statt Zahlen auch Text enthalten, dies sind dann sog. `character vectors`. Hier ist ein Beispiel ("check" drÃ¼cken):
 ```{r "2_f"}
 namen <- c("Anna","Bob","Clara","Dora","Emil")
 namen
@@ -198,23 +196,23 @@ text <- c("3","1","0","0","34","-2","0","17")
 text
 ```
 
-Um zu sehen welchen Datentyp eine Variable oder ein Vektor beinhaltet können Sie die Funktion `class()` verwenden. Lassen Sie sich den Datentyp von `text` ausgeben.
+Um zu sehen welchen Datentyp eine Variable oder ein Vektor beinhaltet kÃ¶nnen Sie die Funktion `class()` verwenden. Lassen Sie sich den Datentyp von `text` ausgeben.
 ```{r "2_f_3"}
 
 # enter your code here ...
 
 ```
 
-g) Wenn Sie versuchen numerische Operationen mit dem Vektor `text` durchzuführen wird Ihnen R schnell eine Fehlermeldung ausgeben.
+g) Wenn Sie versuchen numerische Operationen mit dem Vektor `text` durchzufÃ¼hren wird Ihnen R schnell eine Fehlermeldung ausgeben.
 
-Sie können einen Vektor oder eine Variable in einen der drei gängigsten Datentyp mit folgenden Befehlen umwandeln.
+Sie kÃ¶nnen einen Vektor oder eine Variable in einen der drei gÃ¤ngigsten Datentyp mit folgenden Befehlen umwandeln.
 ```{r "2_g"}
 as.character()
 as.numeric()
 as.logical()
 ```
 
-Wandeln Sie `text` in einen numerischen Vekor um, speichern Sie diesen als `text_num` und lassen Sie sich diesen anschließend anzeigen.
+Wandeln Sie `text` in einen numerischen Vekor um, speichern Sie diesen als `text_num` und lassen Sie sich diesen anschlieÃend anzeigen.
 ```{r "2_g_2",optional=TRUE}
 
 # enter your code here ...
@@ -224,14 +222,14 @@ Wandeln Sie `text` in einen numerischen Vekor um, speichern Sie diesen als `text
 
 ```
 
-h) Suchen Sie auf Google mit dem Suchbegriff "r length", mit welcher Funktion man in R die Länge eines Objektes (z.B. eines Vektors) bestimmen kann. Bestimmen Sie anschließend die Länge von `names`.
+h) Suchen Sie auf Google mit dem Suchbegriff "r length", mit welcher Funktion man in R die LÃ¤nge eines Objektes (z.B. eines Vektors) bestimmen kann. Bestimmen Sie anschlieÃend die LÃ¤nge von `names`.
 ```{r "2_h",optional=TRUE}
 
 # enter your code here ...
 
 ```
 
-i) Manchmal möchte man bestimmte Elemente eines Vektors selektieren. Hier sind ein paar Beispiele, wie man auf bestimmte Elemente zugreifen kann.
+i) Manchmal mÃ¶chte man bestimmte Elemente eines Vektors selektieren. Hier sind ein paar Beispiele, wie man auf bestimmte Elemente zugreifen kann.
 ```{r "2_i"}
 namen[3] # Selektiere 3. Element
 namen[2:4] # Selektiere Elemente 2,3 und 4
@@ -243,7 +241,7 @@ Selektieren Sie bitte nun die Elemente 2, 4 und 5 des Vektors `namen`:
 # enter your code here ...
 
 ```
-Sie können mit einem ähnlichen Syntax auch einzelne Werte eines Vektors ändern oder hinzufügen. Hier sind ein paar Beispiele:
+Sie kÃ¶nnen mit einem Ã¤hnlichen Syntax auch einzelne Werte eines Vektors Ã¤ndern oder hinzufÃ¼gen. Hier sind ein paar Beispiele:
 ```{r "2_i_3"}
 namen[6] = "Felix"
 namen
@@ -251,7 +249,7 @@ namen[1:2] = c("Alex","Ben")
 namen
 ```
 
-Zum Schluss dieser Aufgabe betrachten wir noch drei Codebeispiele. überlegen Sie sich welche Werte `x` jeweils am Ende enthält.
+Zum Schluss dieser Aufgabe betrachten wir noch drei Codebeispiele. Ã¼berlegen Sie sich welche Werte `x` jeweils am Ende enthÃ¤lt.
 
 
 ```s
@@ -323,25 +321,25 @@ Geben Sie hier die Ziffer Ihrer Antwort ein und fuehren Sie die Codezeile aus:
 
 Man nennt in R eine Variable mit tabellarischen Daten einen "Data Frame". Ein Data Frame besteht aus aneinander gereihten Vektoren.
 
-Der folgende Code enthält ein Beispiel für einen Data Frame.
+Der folgende Code enthÃ¤lt ein Beispiel fÃ¼r einen Data Frame.
 
 ```{r "3_1"}
 dataframe <- data.frame(Variable1=c(22,27,20,28,26), Variable2=seq(0,8,2), Variable3 = "Uni")
 ```
 
-a) `P` Erzeugen Sie einen Dataframe `z`, der die fünf Spalten Land, Kontinent, Jahr, BIP und ID enthält.
+a) `P` Erzeugen Sie einen Dataframe `z`, der die fÃ¼nf Spalten Land, Kontinent, Jahr, BIP und ID enthÃ¤lt.
 
-Die Länder sind: Brasilien, Deutschland, Frankreich, Mexiko und Suedkorea. 
+Die LÃ¤nder sind: Brasilien, Deutschland, Frankreich, Mexiko und Suedkorea. 
 
 Die Kontinente sind: Am, Eur, Eur, Am, As.
 
-Das Jahr für alle 2018.
+Das Jahr fÃ¼r alle 2018.
 
 Das BIP: 2.14, 4.21, 2.93, 1.21, 1.69.
 
 Die ID eine aufsteigende Sequenz.
 
-Lassen Sie sich anschließend `z` anzeigen.
+Lassen Sie sich anschlieÃend `z` anzeigen.
 
 ```{r "3_a"}
 
@@ -352,7 +350,7 @@ Lassen Sie sich anschließend `z` anzeigen.
 
 ```
 
-Außerdem kann man bestehende Datensätze in R einlesen. Sie finden unten ein Beispiel:
+AuÃerdem kann man bestehende DatensÃ¤tze in R einlesen. Sie finden unten ein Beispiel:
 
 ```{r "3_a_2"}
 elec <- read.csv("data/Electricity.csv", header = TRUE, dec = ".", sep = ",", stringsAsFactors = FALSE)
@@ -360,23 +358,23 @@ elec <- read.csv("data/Electricity.csv", header = TRUE, dec = ".", sep = ",", st
 
 Die Spezifizierung `.csv` gibt dabei an, dass der Datensatz als Datei im CSV-Format vorliegt. Genauso denkbar ist bspw. die Endung `.dta`. Je nach Dateityp. An erster Stelle steht der Pfad an dem die Datei gespeichert ist. In diesem Fall liegt Sie in unsererm Arbeitsverzeichnis und der Dateipfad ist dementsprechend nur der Dateiname. 
 
-`header = TRUE` übergibt die Information, dass der Datensatz eine Kopfzeile hat, in der sich die Variablennamen befinden.
+`header = TRUE` Ã¼bergibt die Information, dass der Datensatz eine Kopfzeile hat, in der sich die Variablennamen befinden.
 `dec = "."`, dass im Datensatz Dezimalstellen durch Punkte getrennt werden und
 `sep = ","`, dass im Datensatz einzelne Datenpunkte durch Kommas abgetrennt werden.
-Werden die Optionen `dec`und `sep` weggelassen, dann geht der Befehl immer davon aus, dass der Datensatz eine Überschrift hat, Dezimalstellen durch Punkte getrennt werden und einzelne Datenpunkte durch Kommas. D.h. im vorliegenden Beispiel hätte man die Optionen `header`, `dec`und `sep` weggelassen können.
-Außerdem empfielt es sich die Option `stringsAsFactors` auf False zu setzen.
+Werden die Optionen `dec`und `sep` weggelassen, dann geht der Befehl immer davon aus, dass der Datensatz eine Ãberschrift hat, Dezimalstellen durch Punkte getrennt werden und einzelne Datenpunkte durch Kommas. D.h. im vorliegenden Beispiel hÃ¤tte man die Optionen `header`, `dec`und `sep` weggelassen kÃ¶nnen.
+AuÃerdem empfielt es sich die Option `stringsAsFactors` auf False zu setzen.
 
-Wenn Sie genauer wissen wollen, was das Argument `stringsAsFactors = FALSE` im Aufruf von `read.csv` bedeutet, öffnen Sie einfach folgenden Infoblock.
+Wenn Sie genauer wissen wollen, was das Argument `stringsAsFactors = FALSE` im Aufruf von `read.csv` bedeutet, Ã¶ffnen Sie einfach folgenden Infoblock.
 
 ```{r eval=FALSE}
 # Run for additional info in the Viewer pane
 info("Hintergrund zu stringsAsFactors = FALSE")
 ```
 
-Mit der Basisversion von R würde uns nur `read.csv` zur Verfügung stehen. Da wir jedoch in Zukunft immer das Paket `tidyverse` laden wollen und dessen Vorteile nutzen, können wir das dort enthaltene Paket `readr` nutzen und die Funktion `read_csv` verwenden.
+Mit der Basisversion von R wÃ¼rde uns nur `read.csv` zur VerfÃ¼gung stehen. Da wir jedoch in Zukunft immer das Paket `tidyverse` laden wollen und dessen Vorteile nutzen, kÃ¶nnen wir das dort enthaltene Paket `readr` nutzen und die Funktion `read_csv` verwenden.
 
-b) `P` Lesen Sie nun den Datensatz eu_macro_2017.csv ein uns speichern Sie diesen unter `dat`. Der Datensatz hat eine Kopfzeile, Datenpunkte werden mit Kommas voneinander getrennt und Dezimalstellen mit Punkten gekennzeichnet und befindet sich im Ordner "data". Nutzen Sie `read_csv` für das Einlesen.
-Lassen Sie sich anschließend die ersten 8 Zeilen anzeigen.
+b) `P` Lesen Sie nun den Datensatz eu_macro_2017.csv ein uns speichern Sie diesen unter `dat`. Der Datensatz hat eine Kopfzeile, Datenpunkte werden mit Kommas voneinander getrennt und Dezimalstellen mit Punkten gekennzeichnet und befindet sich im Ordner "data". Nutzen Sie `read_csv` fÃ¼r das Einlesen.
+Lassen Sie sich anschlieÃend die ersten 8 Zeilen anzeigen.
 
 ```{r "3_b"}
 
@@ -387,19 +385,19 @@ Lassen Sie sich anschließend die ersten 8 Zeilen anzeigen.
 
 ```
 
-Dies sind für das Jahr 2017 ausgewählte makroökonomische Daten der damaligen EU Mitglieder. (Quelle: <a href="https://ec.europa.eu/info/business-economy-euro/indicators-statistics/economic-databases/macro-economic-database-ameco_en">AMECO Datenbank der EU Kommission</a>)
+Dies sind fÃ¼r das Jahr 2017 ausgewÃ¤hlte makroÃ¶konomische Daten der damaligen EU Mitglieder. (Quelle: <a href="https://ec.europa.eu/info/business-economy-euro/indicators-statistics/economic-databases/macro-economic-database-ameco_en">AMECO Datenbank der EU Kommission</a>)
 
 Die Spalten von `dat` enthalten folgende Werte:
 
-  - `cntry` Ein 3 stelliger Ländercode
+  - `cntry` Ein 3 stelliger LÃ¤ndercode
   - `country` Name des Landes
-  - `pop` Bevölkerung in Millionen
-  - `gdp` Bruttoinlandsprodukt in Mrd Euro ("gdp" steht für "Gross Domestic Product")
-  - `gov_debt` Staatschulden (alle öffentlichen Haushalte) in Mrd Euro
+  - `pop` BevÃ¶lkerung in Millionen
+  - `gdp` Bruttoinlandsprodukt in Mrd Euro ("gdp" steht fÃ¼r "Gross Domestic Product")
+  - `gov_debt` Staatschulden (alle Ã¶ffentlichen Haushalte) in Mrd Euro
   - `exports` Exporte in Mrd Euro
   - `imports` Importe in Mrd Euro
 
-c) Die Funktionen `nrow` und `ncol` liefern die Anzahl der Zeilen, bzw. Spalten eines Data Frames. Nutzen Sie die passende der beiden Funktionen um in der Variablen `n` die Anzahl der EU Länder 2017 abzuspeichern und zeigen Sie `n` an.
+c) Die Funktionen `nrow` und `ncol` liefern die Anzahl der Zeilen, bzw. Spalten eines Data Frames. Nutzen Sie die passende der beiden Funktionen um in der Variablen `n` die Anzahl der EU LÃ¤nder 2017 abzuspeichern und zeigen Sie `n` an.
 ```{r "3_c",optional=TRUE}
 
 # enter your code here ...
@@ -410,7 +408,7 @@ c) Die Funktionen `nrow` und `ncol` liefern die Anzahl der Zeilen, bzw. Spalten 
 ```
 
 
-d) `P` in der vorherigen Aufgabe haben Sie bereits ein Beispiel gesehen, wie Sie bestimmte Zeilen aus einem Data Frame auswählen können. Speichern Sie in der Variable `d` einen Data Frame, der die ersten drei Zeilen von `dat` enthält.
+d) `P` in der vorherigen Aufgabe haben Sie bereits ein Beispiel gesehen, wie Sie bestimmte Zeilen aus einem Data Frame auswÃ¤hlen kÃ¶nnen. Speichern Sie in der Variable `d` einen Data Frame, der die ersten drei Zeilen von `dat` enthÃ¤lt.
 
 ```{r "3_d"}
 
@@ -418,7 +416,7 @@ d) `P` in der vorherigen Aufgabe haben Sie bereits ein Beispiel gesehen, wie Sie
 
 ```
 
-e) `P` Spalten kann man in R auf viele unterschiedliche Arten auswählen. Hier sind 5 Codezeilen, von denen jede die Spalte `cntry` von `d` auswählt. Drücken Sie einfach nur "check".
+e) `P` Spalten kann man in R auf viele unterschiedliche Arten auswÃ¤hlen. Hier sind 5 Codezeilen, von denen jede die Spalte `cntry` von `d` auswÃ¤hlt. DrÃ¼cken Sie einfach nur "check".
 
 ```{r "3_e"}
 d[,1]
@@ -428,9 +426,9 @@ d[["cntry"]]
 d[[1]]
 d$cntry
 ```
-Die letzte Möglichkeit mit dem `$` Zeichen `d$cntry` ist meist die bequemste Fassung eine Spalte auszuwählen.
+Die letzte MÃ¶glichkeit mit dem `$` Zeichen `d$cntry` ist meist die bequemste Fassung eine Spalte auszuwÃ¤hlen.
 
-Bevor wir zeigen, wie man direkt mit einem Data Frame arbeiten kann, möchten wir zunächst eine einzelne Spalte in einem Vektor abspeichern und analysieren. Weisen Sie nun der Variable `p` die Spalte mit der Bevölkerungsgröße aus `dat` zu. 
+Bevor wir zeigen, wie man direkt mit einem Data Frame arbeiten kann, mÃ¶chten wir zunÃ¤chst eine einzelne Spalte in einem Vektor abspeichern und analysieren. Weisen Sie nun der Variable `p` die Spalte mit der BevÃ¶lkerungsgrÃ¶Ãe aus `dat` zu. 
 
 ```{r "3_e_2"}
 
@@ -438,15 +436,15 @@ Bevor wir zeigen, wie man direkt mit einem Data Frame arbeiten kann, möchten wi
 
 ```
 
-f) Häufig verwendete R Funktionen sind `mean`, `sum`, `max` und `min`. Sie sollen diese nun in den folgenden Aufgaben an der richtigen Stelle verwenden.
+f) HÃ¤ufig verwendete R Funktionen sind `mean`, `sum`, `max` und `min`. Sie sollen diese nun in den folgenden Aufgaben an der richtigen Stelle verwenden.
 
-i) Berechnen Sie die gesamte Bevölkerung der EU28 in Mio. Menschen
+i) Berechnen Sie die gesamte BevÃ¶lkerung der EU28 in Mio. Menschen
 ```{r "3_f",optional=TRUE}
 
 # enter your code here ...
 
 ```
-Hmm, über eine halbe Millarde Menschen. Gar nicht mal so klein die EU...
+Hmm, Ã¼ber eine halbe Millarde Menschen. Gar nicht mal so klein die EU...
 
 ii)
 Und wieviel Mio Einwohner hat ein EU Land im Durchschnitt?
@@ -455,31 +453,31 @@ Und wieviel Mio Einwohner hat ein EU Land im Durchschnitt?
 # enter your code here ...
 
 ```
-Der Schnitt aller EU Länder ist also etwas mehr, als die Einwohnerzahl der Niederlande.
+Der Schnitt aller EU LÃ¤nder ist also etwas mehr, als die Einwohnerzahl der Niederlande.
 
-iii) Zeigen Sie die Anzahl der Einwohner (in Mio)  des größten EU28 Landes an.
+iii) Zeigen Sie die Anzahl der Einwohner (in Mio)  des grÃ¶Ãten EU28 Landes an.
 ```{r "3_f_3",optional=TRUE}
 
 # enter your code here ...
 
 ```
-Früher mit 80 Mio war es natürlich einfacher pro Kopf Werte im Kopf zu berechnen als mit 83 Mio. Na ja vielleicht legen wir ja noch um 17 Mio zu...
+FrÃ¼her mit 80 Mio war es natÃ¼rlich einfacher pro Kopf Werte im Kopf zu berechnen als mit 83 Mio. Na ja vielleicht legen wir ja noch um 17 Mio zu...
 
-iv) Wievielfach mehr Einwohner hat das größte EU Land, als das kleinste? Berechnen Sie mit R ohne zu Runden.
+iv) Wievielfach mehr Einwohner hat das grÃ¶Ãte EU Land, als das kleinste? Berechnen Sie mit R ohne zu Runden.
 ```{r "3_f_4",optional=TRUE}
 
 # enter your code here ...
 
 ```
-Aber immerhin ist Malta immer noch mehr als doppelt so groß wie Ulm und Neu-Ulm zusammen!
+Aber immerhin ist Malta immer noch mehr als doppelt so groÃ wie Ulm und Neu-Ulm zusammen!
 
-g) Man kann sich alternativ auch eine sogenannte 5er-Characteristik bestehend aus Mittelwert, den Extremwerten, dem Median und den Grenzen des 1. sowie 3. Quartils des Vektors ausgeben lassen. Verwenden Sie den Befehl `summary()`. Googlen Sie ggf. wie man diesen anwendet und lassen Sie sich eine 5er-characteristic für den Vektor `p` ausgeben.
+g) Man kann sich alternativ auch eine sogenannte 5er-Characteristik bestehend aus Mittelwert, den Extremwerten, dem Median und den Grenzen des 1. sowie 3. Quartils des Vektors ausgeben lassen. Verwenden Sie den Befehl `summary()`. Googlen Sie ggf. wie man diesen anwendet und lassen Sie sich eine 5er-characteristic fÃ¼r den Vektor `p` ausgeben.
 ```{r "3_g",optional=TRUE}
 
 # enter your code here ...
 
 ```
-h) `summary()` funktioniert auch für den Datensatz im Ganzen. Lassen Sie sich die 5er-Characteristiken für den gesamten Datensatz `dat` ausgeben.
+h) `summary()` funktioniert auch fÃ¼r den Datensatz im Ganzen. Lassen Sie sich die 5er-Characteristiken fÃ¼r den gesamten Datensatz `dat` ausgeben.
 ```{r "3_h",optional=TRUE}
 
 # enter your code here ...
@@ -490,7 +488,7 @@ h) `summary()` funktioniert auch für den Datensatz im Ganzen. Lassen Sie sich d
 
 ## Exercise 4 -- Data Frames Teil 2
 
-Drücken Sie auf `edit` und dann `check` um für diese Aufgabe die Datensätze erneut zu laden:
+DrÃ¼cken Sie auf `edit` und dann `check` um fÃ¼r diese Aufgabe die DatensÃ¤tze erneut zu laden:
 ```{r "4_1"}
 z <- data.frame(Land=c("Brasilien","Deutschland","Frankreich","Mexiko","Suedkorea"), Kontinent=c("Am","Eur", "Eur","Am","As"), Jahr=2018, BIP=c(2.14,4.21,2.93,1.21,1.69), ID=1:5)
 
@@ -498,40 +496,40 @@ dat <- read_csv("./data/eu_macro_2017.csv")
 p <- dat$pop
 ```
 
-a) Man kann Vektoren auch Namen zuweisen, was manchmal ganz hilfreich sein kann. Hier ist ein Beispiel. `p` ist ein Vektor mit den Bevölkerungsgrößen der EU-Länder. (Bitte `check` drücken)
+a) Man kann Vektoren auch Namen zuweisen, was manchmal ganz hilfreich sein kann. Hier ist ein Beispiel. `p` ist ein Vektor mit den BevÃ¶lkerungsgrÃ¶Ãen der EU-LÃ¤nder. (Bitte `check` drÃ¼cken)
 ```{r "4_a"}
-# Weise den Ländercode als Namen zu
+# Weise den LÃ¤ndercode als Namen zu
 names(p) <- dat$cntry
 
 # Namen sind hilfreich beim lesen
 p[c(1,7,28)] 
 
-# Man kann dann auch Elemente per Namen auswählen
+# Man kann dann auch Elemente per Namen auswÃ¤hlen
 p["DEU"] 
 ```
-Speichern Sie in der Variable `pop_share` den jeweiligen Anteil der Bevölkerung des Landes an der Gesamtbevölkerung der EU. 
+Speichern Sie in der Variable `pop_share` den jeweiligen Anteil der BevÃ¶lkerung des Landes an der GesamtbevÃ¶lkerung der EU. 
 ```{r "4_a_2"}
 
 # enter your code here ...
 
 ```
-Zeigen Sie den Bevölkerungsanteil Deutschlands in der EU
+Zeigen Sie den BevÃ¶lkerungsanteil Deutschlands in der EU
 ```{r "4_a_3",optional=TRUE}
 
 # enter your code here ...
 
 ```
-b) lapply kann eine sehr nützliche Funktion sein. Sie erlaubt es Funktionen (wie z.B. `sum()`, `median()` oder `class()`) auf ganze Spalten oder Zeilen eines Objektes anzuwenden. So können bspw. relativ einfach Spaltensummen berechnet werden. Im folgenden sehen Sie ein Beispiel für lapply:
+b) lapply kann eine sehr nÃ¼tzliche Funktion sein. Sie erlaubt es Funktionen (wie z.B. `sum()`, `median()` oder `class()`) auf ganze Spalten oder Zeilen eines Objektes anzuwenden. So kÃ¶nnen bspw. relativ einfach Spaltensummen berechnet werden. Im folgenden sehen Sie ein Beispiel fÃ¼r lapply:
 ```{r "4_b"}
 df <- data.frame(Filiale=1:7, Mitarbeiter=c(3,5,4,4,3,5,3), Umsatz=c(19856,17008,31220,24450,28132,28063,20524))
 head(df,3)
 lapply(df,sum)
 ```
-Mit tapply können Sie Funktionen nach Gruppen anwenden (z.B. für Filialen mit gleicher Mitarbeiterzahl):
+Mit tapply kÃ¶nnen Sie Funktionen nach Gruppen anwenden (z.B. fÃ¼r Filialen mit gleicher Mitarbeiterzahl):
 ```{r "4_b_2"}
 tapply(df$Umsatz,df$Mitarbeiter,sum)
 ```
-Lassen Sie sich für jede Spalte vom Data Frame `z` den Mittelwert ausgeben und speichern Sie die Liste als `z_mean`. Lassen Sie sich anschließend `z_mean` ausgeben.
+Lassen Sie sich fÃ¼r jede Spalte vom Data Frame `z` den Mittelwert ausgeben und speichern Sie die Liste als `z_mean`. Lassen Sie sich anschlieÃend `z_mean` ausgeben.
 ```{r "4_b_3",optional=TRUE}
 
 # enter your code here ...
@@ -540,22 +538,22 @@ Lassen Sie sich für jede Spalte vom Data Frame `z` den Mittelwert ausgeben und 
 # enter your code here ...
 
 ```
-c) Lassen Sie sich für jeden Kontinent in `z` das Minumum des BIP nach Kontinent ausgeben.
+c) Lassen Sie sich fÃ¼r jeden Kontinent in `z` das Minumum des BIP nach Kontinent ausgeben.
 ```{r "4_c",optional=TRUE}
 
 # enter your code here ...
 
 ```
-d) `P` Wir können den Bevölkerungsanteil, auch unserem Data Frame `dat` als neue Spalte hinzufügen. Lassen Sie hierfür einfach den folgenden Code laufen. Klicken Sie herifür `check`.
+d) `P` Wir kÃ¶nnen den BevÃ¶lkerungsanteil, auch unserem Data Frame `dat` als neue Spalte hinzufÃ¼gen. Lassen Sie hierfÃ¼r einfach den folgenden Code laufen. Klicken Sie herifÃ¼r `check`.
 ```{r "4_d",round.digits=3}
 dat$pop_share <- pop_share
 head(dat) # Zeigt per Default die 6 ersten Zeilen
 ```
-Ohne den Umweg über andere Variablennamen, hätten wir die Spalte `pop_share` natürlich auch kompakterweise gleich wie folgt berechnen können:
+Ohne den Umweg Ã¼ber andere Variablennamen, hÃ¤tten wir die Spalte `pop_share` natÃ¼rlich auch kompakterweise gleich wie folgt berechnen kÃ¶nnen:
 ```{r "4_d_2"}
 dat$pop_share <- dat$pop / sum(dat$pop) 
 ```
-e) Fügen Sie nun dem Data Frame `dat` noch eine neue Spalte `gdp_share` hinzu, die den Anteil des BIP jedes Landes am gesammten BIP der EU enthält. Zeigen Sie danach die ersten 6 Zeilen von `dat` mit dem Befehl `head`.
+e) FÃ¼gen Sie nun dem Data Frame `dat` noch eine neue Spalte `gdp_share` hinzu, die den Anteil des BIP jedes Landes am gesammten BIP der EU enthÃ¤lt. Zeigen Sie danach die ersten 6 Zeilen von `dat` mit dem Befehl `head`.
 ```{r "4_e",round.digits=3}
 
 # enter your code here ...
