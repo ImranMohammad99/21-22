@@ -1,7 +1,7 @@
 
 ```{r 'check_ps', include=FALSE}
 
-user.name = "Imran Mohammad"
+user.name = 'Imran Mohammad'
 
 ```
 
@@ -69,6 +69,7 @@ g1 <- eu_makro %>%
   xlab("Verschuldungsquote in %") +
   ylab("Arbeitslosenquote in %")
 g1
+
 ```
 
 Auf den ersten Blick ist zu erkennen, das ein positiver Zusammenhang zwischen der Verschuldungsquote und der Arbeitslosenquote besteht. Aufgrund der Vielzahl der Beobachtungen ist es aber schwer zu sagen, wie stark der Zusammenhang ist.
@@ -78,7 +79,6 @@ b) Eine beliebte Methode einen Zusammenhang in einer einzelnen Zahl zusammenzufa
 ```{r "1_b"}
 reg1 <- lm(___~debt_share_country_pro, data=___)
 summary(___)
-
 # enter your code here ...
 
 
