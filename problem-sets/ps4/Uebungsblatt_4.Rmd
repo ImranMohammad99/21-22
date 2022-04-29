@@ -1,7 +1,7 @@
 
 ```{r 'check_ps', include=FALSE}
 
-user.name = 'Imran Mohammad'
+user.name = "Imran Mohammad"
 
 ```
 
