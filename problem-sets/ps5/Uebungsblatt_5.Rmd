@@ -1,7 +1,7 @@
 
 ```{r 'check_ps', include=FALSE}
 
-user.name = 'ENTER A USER NAME HERE'
+user.name = 'Imran Mohammad'
 ```
 
 # RTutor Uebungsblatt 5 - Projektkurs
@@ -53,10 +53,9 @@ b) Wir moechten nun durch eine lineare Regression den Zusammenhang zwischen Stun
 
 ```{r "1_b",optional=TRUE}
 
-# enter your code here ...
+reg1 <- lm(wage~educ, data=wage1)
 
-
-# enter your code here ...
+summary(reg1)
 
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
@@ -68,7 +67,7 @@ c) Nun ein kleines Quiz. Ist folgende Interpretation des Regressionsergebnisses 
 Schreiben Sie "ja" oder "nein"
 ```{r "1_c",optional=TRUE}
 
-# enter your code here ...
+"nein"
 
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
@@ -89,11 +88,9 @@ Vervollstaendigen Sie den Code and der Stelle ___, um die durchschnittlichen Aus
 
 ```{r "1_e",optional=TRUE}
 wage1 %>%
- mutate(gender = ifelse(female==1,"___","___")) %>%
+ mutate(gender = ifelse(female==1,"female","male")) %>%
  group_by(gender) %>%
- summarize(mean(___))
-
-# enter your code here ...
+ summarize(mean(educ))
 
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
@@ -126,7 +123,7 @@ Wenn wir y auf nur eine Variable x regressieren, misst der geschaetzte Koeffizie
 Tippen Sie 1 oder 2 ein:
 ```{r "1_e_3",optional=TRUE}
 
-# enter your code here ...
+1
 
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
@@ -164,7 +161,7 @@ Nehmen Sie an, wir regressieren y auf x ohne fuer w zu kontrollieren, d.h `lm(y~
 
 ```{r "1_g_2",optional=TRUE}
 
-# enter your code here ...
+"unverzerrt"
 
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
@@ -223,7 +220,7 @@ Wenn wir w als Kontrollvariable einbauen, ist der Koeffizient von x weiterhin se
 Frage: Liegt in der zweiten Regression der wahre kausale Effekt `beta1=2` im 95% Konfidenzintervall um unseren Schaetzer des Koeffizienten von x? Schreiben Sie "ja" oder "nein"
 ```{r "1_g_5"}
 
-# enter your code here ...
+"nein"
 
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
@@ -235,7 +232,7 @@ confint(lm(y~x))
 Berechnen Sie auch das 99% Konfidenzintervall:
 ```{r "1_g_7"}
 
-# enter your code here ...
+confint(lm(y~x), level = 0.99)
 
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
@@ -288,7 +285,7 @@ In welche Richtung veraendert sich vermutlich der geschaetzte Koeffizient von `e
 
 ```{r "1_h_5",optional=TRUE}
 
-# enter your code here ...
+"groesser"
 
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
@@ -313,7 +310,7 @@ Aber was ist jetzt der "wahre" kausale Effekt von Ausbildungsjahren auf Stundenl
 Geben Sie 0.54 oder 0.64 an.
 ```{r "1_h_7"}
 
-# enter your code here ...
+0.54
 
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
@@ -329,8 +326,7 @@ Fuegen Sie zu dem Code unten noch eine dritte Regression hinzu, in der Sie sowoh
 ```{r "1_i"}
 reg1 <- lm(wage ~ educ, data = wage1)
 reg2 <- lm(wage ~ educ + female + nonwhite, data=wage1)
-
-# enter your code here ...
+reg3 <- lm(wage ~ educ + female + nonwhite + exper, data=wage1)
 
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
@@ -364,7 +360,9 @@ Als kleine Voruebung, speichern Sie in der Variablen `n_train` die Zahl der Arbe
 
 ```{r "2_a_2"}
 
-# enter your code here ...
+n_train <- sum(jtrain3$train)
+
+n_train
 
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
@@ -379,7 +377,7 @@ Geben Sie hier die Ziffer Ihrer Antwort ein und fuehren Sie die Codezeile aus:
 
 ```{r "2_a_3"}
 
-# enter your code here ...
+2
 
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
@@ -391,10 +389,9 @@ b) Fuehren Sie eine lineare Regression (mittels OLS) mit x=`train` und y=`unem78
 
 ```{r "2_b"}
 
-# enter your code here ...
+reg1 <- lm(unem78~train, data=jtrain3)
 
-
-# enter your code here ...
+summary(reg1)
 
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
@@ -405,11 +402,9 @@ Bedeutet dies, dass mehr Weiterbildung zu mehr Arbeitslosigkeit fuehrt?
 
 c) Ergaenzen Sie folgenden Code um die durchschnittliche Teilnahme an Weiterbildungsprogrammen 1977 und die Arbeitslosenquote 1978 zwischen den Personen zu vergleichen, die 1975 arbeitslos/nicht arbeitslos waren.
 ```{r "2_c"}
-___ %>% 
- group_by(___) %>%
- summarize(mean(train), mean(___))
-
-# enter your code here ...
+jtrain3 %>% 
+ group_by(unem75) %>%
+ summarize(mean(train), mean(unem78))
 
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
@@ -444,7 +439,7 @@ Schreiben Sie "kleiner" oder "groesser".
 
 ```{r "2_d_2"}
 
-# enter your code here ...
+"kleiner"
 
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
@@ -453,7 +448,11 @@ Regressieren Sie nun `unem78` auf `train` und `unem75`. Speichern Sie das Ergebn
 
 ```{r "2_d_3"}
 
-# enter your code here ...
+reg2 <-lm(unem78~train + unem75, data=jtrain3)
+
+summary(reg2)
+
+stargazer(reg1, reg2, type = "text", single.row = TRUE, header = FALSE, digits=2)
 
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
@@ -467,8 +466,9 @@ Erstellen Sie zwei Datensaetze aus `jtrain3`:
 
 ```{r "2_e"}
 
-# enter your code here ...
+jtrain3_la = filter(jtrain3, unem75 == 1)
 
+jtrain3_ka = filter(jtrain3, unem75 == 0)
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
 
@@ -476,7 +476,9 @@ Lassen Sie nun die einfache Regression von `unem78` auf `train` (ohne `unem75`) 
 
 ```{r "2_e_2"}
 
-# enter your code here ...
+reg_la <- lm(unem78~train, data=jtrain3_la)
+
+reg_ka <- lm(unem78~train, data=jtrain3_ka)
 
 stargazer(reg1, reg2, reg_la, reg_ka,type="text",keep.stat=c("n"), column.labels = c("alle","alle", "Lang Alo","Kurz Alo") )
 ```
@@ -529,7 +531,7 @@ Meinen Sie dieses Design loest die meisten relevanten Selektionsproblem und erla
 
 ```{r "2_f_2"}
 
-# enter your code here ...
+"nein"
 
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
